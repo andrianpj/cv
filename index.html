@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sekolah dani ajg</title>
+    <title>kamu</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #ffe6e6;
+            color: #333;
+            text-align: center;
         }
 
         header {
-            background-color: #007BFF;
+            background-color: #ff4d4d;
             color: #fff;
-            text-align: center;
             padding: 20px;
         }
 
-        h1 {
-            font-size: 36px;
-        }
-
-        main {
+        section {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
@@ -31,110 +28,49 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
-            font-size: 24px;
-            color: #007BFF;
+        h1, h2, h3 {
+            color: #ff4d4d;
         }
 
         p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        ul {
-            list-style-type: square;
-            margin-left: 20px;
+            line-height: 1.6;
         }
 
         footer {
-            background-color: #007BFF;
-            color: #fff;
             text-align: center;
             padding: 10px;
-        }
-
-        /* Animasi Slide */
-        .login-container {
-            display: none;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .login-container.active {
-            display: block;
-            animation: slide-in 0.5s ease-in-out;
-            text-align: center;
-        }
-
-        @keyframes slide-in {
-            0% {
-                transform: translate(-50%, -150%);
-                opacity: 0;
-            }
-            100% {
-                transform: translate(-50%, -50%);
-                opacity: 1;
-            }
-        }
-
-        /* Tombol Login */
-        .login-button {
-            background-color: #007BFF;
+            background-color: #ff4d4d;
             color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Profil Sekolah dani</h1>
+        <h1>Our Love Story</h1>
+        <p>Forever and Always</p>
     </header>
-    <main>
-        <h2>Tentang Sekolah</h2>
-        <p>Sekolah XYZ adalah sebuah lembaga pendidikan yang berkomitmen untuk memberikan pendidikan berkualitas tinggi kepada siswa-siswa kami.</p>
-        
-        <h2>Fasilitas</h2>
-        <p>Kami memiliki fasilitas-fasilitas modern yang mendukung proses pembelajaran, termasuk:</p>
-        <ul>
-            <li>Laboratorium komputer yang dilengkapi dengan perangkat terbaru.</li>
-            <li>Perpustakaan dengan koleksi buku yang kaya.</li>
-            <li>Lapangan olahraga yang luas.</li>
-        </ul>
-        
-        <h2>Kurikulum</h2>
-        <p>Kami menawarkan kurikulum yang berfokus pada pengembangan akademik dan keterampilan sosial siswa. Kami juga menyediakan berbagai program ekstrakurikuler yang beragam.</p>
-    </main>
+
+    <section>
+        <h2>You and Me</h2>
+        <p>
+            In the book of life, every page is a new chapter. Together, let's write a love story that lasts forever.
+        </p>
+
+        <h2>Memorable Moments</h2>
+        <p>
+            Our first meeting, the laughter we share, the adventures we embark on - every moment with you is special and cherished.
+        </p>
+
+        <h2>apaya</h2>
+        <p>
+            "I Will Always Love You" by Whitney Houston
+        </p>
+    </section>
+
     <footer>
-        &copy; created by daniii
+        <p>Forever Yours | Love, arthaaaa</p>
     </footer>
 
-    <!-- Slide Login -->
-    <div id="login" class="login-container">
-        <h2>Login</h2>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br><br>
-            <button class="login-button">Login</button>
-        </form>
-    </div>
-
-    <!-- Tombol untuk Membuka/Hide Slide Login -->
-    <button id="toggle-login" class="login-button" onclick="toggleLogin()">Buka Login</button>
-
-    <script>
-        function toggleLogin() {
-            var loginContainer = document.getElementById("login");
-            loginContainer.classList.toggle("active");
-        }
-    </script>
 </body>
 </html>
